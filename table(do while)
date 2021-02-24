@@ -1,0 +1,16 @@
+public class Main
+{
+    	public static void main(String[] args) {
+	    int point =1;
+	    int p=10;
+	    do{
+	      System.out.println("5 x " + point + " : "+(5*point) );
+	    
+	   
+	      p--;
+          
+	     }while(p>0);
+	   
+     
+	}
+}
