@@ -1,0 +1,13 @@
+import java.util.*;
+	public class withoutadd
+	{
+		public static void main(String[] args) {
+                int a=5,b=6;
+		int c;
+		c=a;
+		a=b;
+		b=c;
+		System.out.println("value of a is :"+a);
+		System.out.println("value of b is :"+b);
+	}
+    }
