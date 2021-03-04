@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main
+{
+
+	public static void main(String[] args) {
+	int i,j;
+  rakesh :
+    for(i=1;i<=5;i++)
+    {
+       if(i==3)
+       continue rakesh;
+     System.out.println(i+"");
+	}
+	for(i=1;i<=4;i++){
+	    for(j=1;j<=i;j++){
+	        System.out.print(j+"");
+	        System.out.println("");
+	    }
+	}
+}
+}
