@@ -1,0 +1,252 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    int first = 0;
+	    int starter = 0,starterQty = 0,starterPrice = 0;
+	    int maincourse = 0,maincourseSelect=0,maincourseQty = 0,maincoursePrice = 0;
+	    int dessert = 0,dessertQty = 0,dessertPrice = 0;
+	    int dal =0,roti =0, sabji =0;
+
+        Scanner scan = new Scanner(System.in);
+		System.out.println("______________________TIME PASS DHABA_________________________________");
+	    System.out.println("ADRESS: INDORE HIGH WAY ");
+	    System.out.println("what you want :");
+	    System.out.println("\t1. Starter ");
+	    System.out.println("\t2. Maincourse ");
+	    System.out.println("\t3. Dessert");
+        first = scan.nextInt();
+	    if(first==1){
+	        System.out.println("You selected Starters :\nWe have in Starters :");
+	        System.out.println("\t1. Chilli panner - 100");
+	        System.out.println("\t2. Papad - 30");
+	        System.out.println("\t3. Salad - 20");
+	       starter = scan.nextInt();
+	       if(starter==1){
+	           starterPrice = 100;
+	           System.out.println("\t\tEnter Qty for Chilli panner :");
+	           starterQty = scan.nextInt();
+	           System.out.println("Total Qty of Chilli panner is : "+starterQty+"\nTotal Amount for Chilli panner : " +starterQty*starterPrice );
+	       } else if(starter==2){
+	           starterPrice = 30;
+	           System.out.println("Enter Qty for Papad :");
+	           starterQty = scan.nextInt();
+	           System.out.println("Total Qty of Papad is : "+starterQty+"\nTotal Amount for Papad : " +starterQty*starterPrice );
+	       } else if(starter==3){
+	           starterPrice = 20;
+	           System.out.println("Enter Qty for Salad :");
+	           starterQty = scan.nextInt();
+	           System.out.println("Total Qty of Salad is : "+starterQty+"\nTotal Amount for Salad : " +starterQty*starterPrice );
+	       } else {
+	           System.out.println("Wrong Entry in Starters..!!");
+	       }
+
+	    }else if(first==2){
+	        System.out.println("we have in Main-Course:");
+	        System.out.println("\t1. Dal");
+	        System.out.println("\t2. Roti");
+	        System.out.println("\t3. Sabji");
+	        maincourseSelect=scan.nextInt();
+	        if(maincourseSelect==1){
+	            System.out.println("You are selected dal : \n We have in dal");
+	            System.out.println("\t 1.masoor dal - 100");
+	            System.out.println("\t 2.chana dal - 120");
+	            System.out.println("\t 3. toor dal - 150");
+	            maincourse=scan.nextInt();
+	            if(maincourse==1){
+                    maincoursePrice = 100;
+                    System.out.println("Enter Qty for masoor dal :");
+                    maincourseQty =scan.nextInt();
+                    System.out.println("Total Qty of masoor dal is :" +maincourseQty+"\n Total amount of masoor dal :" +maincourseQty*maincoursePrice );
+    	        }else if(maincourse==2){	          
+                    maincoursePrice = 120;
+                    System.out.println("Enter Qty for chana dal :");
+                    maincourseQty =scan.nextInt();
+                    System.out.println("Total Qty of chana dal is :" +maincourseQty+"\n Total amount of chana dal :" +maincourseQty*maincoursePrice );
+                }else if(maincourse==3){
+                    maincoursePrice = 150;
+                    System.out.println("Enter Qty for toor dal :");
+                    maincourseQty =scan.nextInt();
+                    System.out.println("Total Qty of toor dal is :" +maincourseQty+"\n Total amount of toor dal :" +maincourseQty*maincoursePrice );
+    
+                }
+	        }else if(maincourseSelect==2){
+	            System.out.println("You are selected Roti :  \n We have in Roti");
+    	        System.out.println("\t 1. Tava - 10");
+	            System.out.println("\t 2. Tandoori - 12");
+	            System.out.println("\t 3. Parathe - 20");
+	            System.out.println("\t 4. normal - 8");
+    	        maincourse =scan.nextInt();
+    	        if(maincourse==1){
+                    maincoursePrice = 10;
+                    System.out.println("Enter Qty for Tava :");
+                    maincourseQty =scan.nextInt();
+                    System.out.println("Total Qty of Tava is :" +maincourseQty+"\n Total amount of Tava :" +maincourseQty*maincoursePrice );
+    	        }else if(maincourse==2){	          
+                    maincoursePrice = 12;
+                    System.out.println("EnterQty for Tandoori  :");
+                    maincourseQty =scan.nextInt();
+                    System.out.println("Total Qty of Tandoori is :" +maincourseQty+"\n Total amount of Tandoori :" +maincourseQty*maincoursePrice );
+                }else if(maincourse==3){
+                    maincoursePrice = 20;
+                    System.out.println("Enter Qty for Parathe :");
+                    maincourseQty =scan.nextInt();
+                    System.out.println("Total Qty of Parathe is :" +maincourseQty+"\n Total amount of Parathe :" +maincourseQty*maincoursePrice );
+                }else if(maincourse==4){
+                    maincoursePrice = 8;
+                    System.out.println("Enter Qty for Normal :");
+                    maincourseQty =scan.nextInt();
+                    System.out.println("Total Qty of Normal is :" +maincourseQty+"\n Total amount of roti :" +maincourseQty*maincoursePrice );
+                }
+	        }else if(maincourseSelect==3){
+	            System.out.println("You are selected Sabji :  \n We have in Sabji");
+    	        System.out.println("\t 1. Paneer - ");
+	            System.out.println("\t 2. Poteto - ");
+	            System.out.println("\t 3. Bhindi - ");
+	            sabji=scan.nextInt();
+	            if(sabji==1){
+    	           System.out.println("You selected Paneer");
+    	           System.out.println("Enter 1. BPM \n2. MP \n3.PB");
+    	           maincourse=scan.nextInt();
+    	           if(maincourse == 1){
+                        maincoursePrice = 100;
+                        System.out.println("Enter Qty for BPM :");
+                        maincourseQty =scan.nextInt();
+                        System.out.println("Total Qty of BPM is :" +maincourseQty+"\n Total amount of BPM :" +maincourseQty*maincoursePrice );
+                    } else if(maincourse == 2){
+                        maincoursePrice = 120;
+                        System.out.println("Enter Qty for MP :");
+                        maincourseQty =scan.nextInt();
+                        System.out.println("Total Qty of MP is :" +maincourseQty+"\n Total amount of MP :" +maincourseQty*maincoursePrice );
+                    } else if(maincourse == 3){
+                        maincoursePrice = 200;
+                        System.out.println("Enter Qty for PB :");
+                        maincourseQty =scan.nextInt();
+                        System.out.println("Total Qty of PB is :" +maincourseQty+"\n Total amount of PB :" +maincourseQty*maincoursePrice );
+                    }
+	            } else if(sabji==2){
+    	           System.out.println("You selected Potato : ");
+    	           System.out.println("Enter 1. Fried Rs.70/-\n2. Dam \n3.65");
+    	           maincourse=scan.nextInt();
+    	           if(maincourse == 1){
+                        maincoursePrice = 70;
+                        System.out.println("Enter Qty for Fried :");
+                        maincourseQty =scan.nextInt();
+                        System.out.println("Total Qty of Fried is :" +maincourseQty+"\n Total amount of Fried :" +maincourseQty*maincoursePrice );
+                    } else if(maincourse == 2){
+                        maincoursePrice = 90;
+                        System.out.println("Enter Qty for Dam :");
+                        maincourseQty =scan.nextInt();
+                        System.out.println("Total Qty of Dam is :" +maincourseQty+"\n Total amount of Dam :" +maincourseQty*maincoursePrice );
+                    } else if(maincourse == 3){
+                        maincoursePrice = 120;
+                        System.out.println("Enter Qty for 65 :");
+                        maincourseQty =scan.nextInt();
+                        System.out.println("Total Qty of 65 is :" +maincourseQty+"\n Total amount of 65 :" +maincourseQty*maincoursePrice );
+                    }
+	            } else if(sabji==3){
+	                maincourse=1;
+    	            System.out.println("You selected Bhindi ");
+                    maincoursePrice = 200;
+                    System.out.println("Enter Qty for Bhindi :");
+                    maincourseQty =scan.nextInt();
+                    System.out.println("Total Qty of Bhindi is :" +maincourseQty+"\n Total amount of Bhindi :" +maincourseQty*maincoursePrice );
+	            }
+	        }
+	    } else if(first==3){
+	        System.out.println("You are sellected dessert :\nWe have in Dessert:");
+	        System.out.println("\t1. GJ - 20");
+	        System.out.println("\t2. IC - 30");
+	    dessert=scan.nextInt();
+	    if(dessert==1){
+	        dessertPrice=20;
+	        System.out.println("Enter Qty for GJ :");
+	        dessertQty=scan.nextInt();
+	        System.out.println("Total Qty of GJ is :"+dessertQty+"\nTotal Amount for GJ :" +dessertQty*dessertPrice );
+	    }else if(dessert==2){
+	        dessertPrice=30;
+	        System.out.println("Enter Qty for IC :");
+	        dessertQty=scan.nextInt();
+            System.out.println("Total Qty of IC is :"+dessertQty+"\nTotal Amount for IC :" +dessertQty*dessertPrice );
+            }
+	    } else {
+	        System.out.println("Wrong entry..!!");
+	    }
+	    System.out.println("\n\n\n\nBilling : ");
+	    System.out.println("1. Starters : ");
+	    if(starter==1){
+	        System.out.println("\tTotal Qty of Chilli panner is : "+starterQty+"\n\tTotal Amount for Chilli panner : " +starterQty*starterPrice );
+	    } else if(starter==2){
+	        System.out.println("\tTotal Qty of Papad is : "+starterQty+"\n\tTotal Amount for Papad : " +starterQty*starterPrice );
+	    } else if(starter==3){
+	        System.out.println("\tTotal Qty of Salad is : "+starterQty+"\n\tTotal Amount for Salad : " +starterQty*starterPrice );
+	    } else {
+	        System.out.println("Nothing Selected in Starters..!!");
+	    }
+	    System.out.println("2. Main-Course : ");
+	    if(maincourseSelect==1){
+	        if(maincourse ==1){
+	            System.out.println("\tTotal Qty of Masoor Dal is : "+maincourseQty+"\n\tTotal Amount Masoor for Dal : " +maincourseQty*maincoursePrice );
+	        } else if(maincourse == 2){
+	            System.out.println("\tTotal Qty of Chana Dal is : "+maincourseQty+"\n\tTotal Amount for Chana Dal : " +maincourseQty*maincoursePrice );
+	        } else if(maincourse == 3){
+	            System.out.println("\tTotal Qty of Toor Dal is : "+maincourseQty+"\n\tTotal Amount for Toor Dal : " +maincourseQty*maincoursePrice );
+	        } else {
+	            System.out.println("Nothing Selected in Starters..!!");
+	        }
+	    } else if(maincourseSelect==2){
+	        if(maincourse ==1){
+	            System.out.println("\tTotal Qty of Tava Roti is : "+maincourseQty+"\n\tTotal Amount for Tava Roti : " +maincourseQty*maincoursePrice );
+	        } else if(maincourse == 2){
+	            System.out.println("\tTotal Qty of Tandoori Roti is : "+maincourseQty+"\n\tTotal Amount for Tandoori Roti : " +maincourseQty*maincoursePrice );
+	        } else if(maincourse == 3){
+	            System.out.println("\tTotal Qty of Parathe is : "+maincourseQty+"\n\tTotal Amount for Parathe : " +maincourseQty*maincoursePrice );
+	        } else if(maincourse == 3){
+	            System.out.println("\tTotal Qty of Normal Roti is : "+maincourseQty+"\n\tTotal Amount for Normal Roti : " +maincourseQty*maincoursePrice );
+	        } else {
+	            System.out.println("Nothing Selected in Starters..!!");
+	        }
+	    } else if(maincourseSelect==3){
+	        if(sabji == 1){
+    	        if(maincourse ==1){
+    	            System.out.println("\tTotal Qty of BPM is : "+maincourseQty+"\n\tTotal Amount for BPM : " +maincourseQty*maincoursePrice );
+    	        } else if(maincourse == 2){
+    	            System.out.println("\tTotal Qty of MP is : "+maincourseQty+"\n\tTotal Amount for MP : " +maincourseQty*maincoursePrice );
+    	        } else if(maincourse == 3){
+    	            System.out.println("\tTotal Qty of PB is : "+maincourseQty+"\n\tTotal Amount for PB : " +maincourseQty*maincoursePrice );
+    	        } else {
+    	            System.out.println("Nothing Selected in Starters..!!");
+    	        }
+	        } else if(sabji == 2){
+    	        if(maincourse ==1){
+    	            System.out.println("\tTotal Qty of Fried is : "+maincourseQty+"\n\tTotal Amount for Fried : " +maincourseQty*maincoursePrice );
+    	        } else if(maincourse == 2){
+    	            System.out.println("\tTotal Qty of DAM is : "+maincourseQty+"\n\tTotal Amount for DAM : " +maincourseQty*maincoursePrice );
+    	        } else if(maincourse == 3){
+    	            System.out.println("\tTotal Qty of 65 is : "+maincourseQty+"\n\tTotal Amount for 65 : " +maincourseQty*maincoursePrice );
+    	        } else {
+    	            System.out.println("Nothing Selected in Starters..!!");
+    	        }
+	        } else if(sabji == 3){
+    	        if(maincourse ==1){
+    	            System.out.println("\tTotal Qty of Bhindi is : "+maincourseQty+"\n\tTotal Amount for Bhindi : " +maincourseQty*maincoursePrice );
+    	        } else {
+    	            System.out.println("Nothing Selected in Starters..!!");
+    	        }
+	        } else {
+	            System.out.println("Nothing Selected in Starters..!!");
+	        }
+	    } else {
+	        System.out.println("Nothing Selected in Main-Course..!!");
+	    }
+	    System.out.println("3. Dessert : ");
+	    if(dessert==1){
+	        System.out.println("\tTotal Qty of GJ is : "+dessertQty+"\n\tTotal Amount for GJ : " +dessertQty*dessertPrice );
+	    } else if(dessert==2){
+	        System.out.println("\tTotal Qty of IC is : "+dessertQty+"\n\tTotal Amount for IC : " +dessertQty*dessertPrice );
+	    } else {
+	        System.out.println("Nothing Selected in Dessert..!!");
+	    }
+	    System.out.println("Total Amount to pay: " +((starterQty*starterPrice)+(maincourseQty*maincoursePrice)+(dessertQty*dessertPrice)));
+	}
+}
